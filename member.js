@@ -3,13 +3,10 @@ function skillMembers() {
     restrict: 'E',
     templateUrl: 'app/components/skill-members/skill-members.html',
     controller: 'SkillMembersController',
-    controllerAs: 'vm',
+    controllerAs: 'skillMembersCtrl',
     bindToController: true,
     scope: {
-      skill: '=',
-      members: '=',
-      onAddMember: '&',
-      onRemoveMember: '&'
+      skill: '='
     }
   };
 }
